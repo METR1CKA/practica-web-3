@@ -1,18 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/contacto.css" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <script src="js/bootstrap.bundle.min.js"></script>
   <title>CONTACTO</title>
 </head>
 <body>
-  <!-- Aquí va el formulario de contacto -->
-  <form id="contacto">
-    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-    <input type="email" id="correo" name="correo" placeholder="Correo">
-    <input type="text" id="direccion" name="direccion" placeholder="Dirección">
-    <!-- Aquí van los campos RSS -->
-  </form>
+  <!-- Navegacion -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">RENTA DE CASAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Contenido principal -->
+  <main class="container mt-5">
+    <h1 class="mb-4">Contáctanos</h1>
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="correo" placeholder="Correo" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="asunto" placeholder="Asunto" required>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="mensaje" placeholder="Mensaje" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+    </form>
+    <div class="mt-5">
+      <h2>Síguenos en nuestras redes sociales</h2>
+      <br>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/tu-pagina" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/tu-pagina" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/tu-pagina" target="_blank">Instagram</a></li>
+        <li><a href="https://wa.me/tu-numero" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+    <footer class="container">
+      <p class="float-end"><a href="#">Ir al inicio</a></p>
+      <p>© 2017–2024 RC, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+  </main>
 </body>
 </html>
