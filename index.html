@@ -1,21 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="js/carrusel.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/carousel.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <script src="js/color-modes.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <title>RENTA DE CASAS</title>
 </head>
 <body>
-  <!-- Aquí va el carrusel -->
-  <div id="carrusel">
-    <!-- Aquí van las imágenes del carrusel -->
-  </div>
-  
-  <!-- Aquí va la información con imágenes -->
-  <div id="informacion">
-    <!-- Aquí van las imágenes e información -->
-  </div>
+  <!-- Navegacion -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">RENTA DE CASAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Principal -->
+  <main>
+    <!-- Carrusel -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/pexels-binyamin-mellish-186077.jpg" class="d-block w-100" alt="Casa 1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Bienvenido a RENTA DE CASAS.</h1>
+              <p>Encuentra la casa de tus sueños con nosotros.</p>
+              <p><a class="btn btn-lg btn-primary">Contáctanos hoy</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/pexels-emre-can-acer-2079234.jpg" class="d-block w-100" alt="Casa 2">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Variedad de opciones.</h1>
+              <p>Tenemos una amplia gama de casas para todos los gustos y presupuestos.</p>
+              <p><a class="btn btn-lg btn-primary">Descubre más</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/pexels-pixabay-221540.jpg" class="d-block w-100" alt="Casa 3">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Confianza y seguridad.</h1>
+              <p>Con nosotros, puedes estar seguro de que estás en buenas manos.</p>
+              <p><a class="btn btn-lg btn-primary">Hablemos</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <!-- Informacion -->
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/house-4780574_1280.jpg">
+          </img>
+          <h2 class="fw-normal">La casa de tu sueños</h2>
+          <p>Encuentra la casa de tus sueños con nosotros. Ofrecemos una amplia gama de casas para todos los gustos y presupuestos.</p>
+          <p><a class="btn btn-secondary" href="#">Ver mas detalles &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/home-589068_1280.jpg">
+          </img>
+          <h2 class="fw-normal">Variedad de opciones</h2>
+          <p>Tenemos una amplia gama de casas para todos los gustos y presupuestos. Ya sea que busques una casa pequeña y acogedora o
+          una mansión lujosa, tenemos algo para ti.</p>
+          <p><a class="btn btn-secondary" href="#">Ver mas detalles &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/pexels-binyamin-mellish-106399.jpg">
+          </img>
+          <h2 class="fw-normal">Confianza y seguridad</h2>
+          <p>Con nosotros, puedes estar seguro de que estás en buenas manos. Nos enorgullece ofrecer un servicio de calidad y nos
+          esforzamos por garantizar la satisfacción de nuestros clientes.</p>
+          <p><a class="btn btn-secondary" href="#">Ver mas detalles &raquo;</a></p>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">¿En busca de una casa?. <span class="text-body-secondary">Encuentra tu hogar ideal.</span></h2>
+          <p class="lead">
+            Aquí encontrarás una gran variedad de casas en renta que se adaptan a tus necesidades y presupuesto.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+            src="assets/pexels-expect-best-323780.jpg">
+          </img>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Te podemos ayudar. <span class="text-body-secondary">Descubre tu proximo hogar. </span></h2>
+          <p class="lead">Explora nuestra amplia selección de casas en renta. Estamos seguros de que encontrarás algo que se adapte a tus
+          necesidades y presupuesto.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/pexels-yogendra-singh-2121832.jpg">
+          </img>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Finalmente, esta casa. <span
+              class="text-body-secondary">La elección perfecta.</span></h2>
+          <p class="lead">
+            Esta es una de nuestras mejores opciones en renta de casas. No está destinada a ser simplemente observada, sino a ser
+            vivida. Aquí puedes crear recuerdos inolvidables. Tu nuevo hogar te espera.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/apartment-2138949_1280.jpg">
+          </img>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    </div>
+    <!-- Footer -->
+    <footer class="container">
+      <p class="float-end"><a href="#">De vuelta al inicio</a></p>
+      <p>&copy; 2017–2024 RC, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
 </body>
 </html>
